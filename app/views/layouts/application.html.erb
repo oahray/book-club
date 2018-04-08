@@ -4,11 +4,21 @@
     <title>BookClub</title>
     <%= csrf_meta_tags %>
 
+    <%# <meta name="viewport" content="width=device-width, initial-scale=1"> %>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= favicon_link_tag asset_path('logo.png'), :rel => 'icon', :type =>  'image/png' %>
   </head>
 
   <body>
+    <%= render 'layouts/header' unless current_page?('/u') %>
+
+    <div class="main">
     <%= yield %>
+    </div>
+
+    <%= render 'layouts/footer' unless current_page?('/u') %>
   </body>
 </html>

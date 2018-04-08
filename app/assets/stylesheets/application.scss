@@ -1,0 +1,72 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+*/
+
+@import "material";
+@import "base";
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.main {
+  padding: 0;
+  top: 0;
+  width: 100%;
+  height:85vh;
+  font-family: "Lora","Open Sans","Helvetiva Neue",Helvetica,Arial,sans-serif;
+  position: absolute;
+  right: 0;
+  bottom: 5vh;
+  left: 0;
+}
+
+.mdl-layout__drawer-button {
+  color: $main-color !important;
+}
+
+.header-main {
+  padding: 0 3%;
+  height: 10vh;
+
+  .mdl-layout__header-row .mdl-navigation__link {
+    color: $main-color !important;
+  }
+
+  a.brand-logo, span.brand-logo {
+    background: image-url("logo.png");
+    background-size: 80px 80px !important;
+    display: inline-block;
+    background-repeat: no-repeat;
+    vertical-align: middle;
+    width: 90px !important;
+    height: 90px !important;
+  }
+}
+
+.footer-main {
+  padding: 0 3%;
+  height: 5vh;
+  bottom: 0;
+  position: absolute;
+  display: grid;
+  grid-template-columns: auto auto auto;
+
+  .copyright-text {
+    grid-column: 3/3;
+    text-align: right;
+  }
+}

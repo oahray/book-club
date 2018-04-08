@@ -1,0 +1,34 @@
+// Place all the styles related to the Landing controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.landing-main {
+  font-family: "Lora","Open Sans","Helvetiva Neue",Helvetica,Arial,sans-serif !important;
+  opacity: 1 !important;
+  filter: alpha(opacity=100);
+  .welcome-text {
+    margin-top: 20vh;
+    text-align: center;
+    color:black;
+  }
+
+  .landing-background {
+    background: no-repeat center center url("https://images.pexels.com/photos/33283/stack-of-books-vintage-books-book-books.jpg?h=350&dpr=2&auto=compress&cs=tinysrgb");
+    background-color:  #000000;
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    z-index: -200;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    bottom: 0;
+    opacity: 0.6;
+    filter: alpha(opacity=60);
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+}
