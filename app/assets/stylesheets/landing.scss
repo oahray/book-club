@@ -2,6 +2,8 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+@import "base";
+
 .landing-main {
   font-family: "Lora","Open Sans","Helvetiva Neue",Helvetica,Arial,sans-serif !important;
   opacity: 1 !important;
@@ -9,7 +11,17 @@
   .welcome-text {
     margin-top: 20vh;
     text-align: center;
+    font-family: $header-font;
     color:black;
+
+    h1 {
+      font-family: $header-font;
+    }
+
+    p {
+      font-size: 1.5em;
+      line-height: 0.5;
+    }
   }
 
   .landing-background {
