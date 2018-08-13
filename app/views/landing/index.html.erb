@@ -1,7 +1,10 @@
 <div class="landing-main">
   <div class="welcome-text">
     <h1>Welcome to book club</h1>
-    <p>For the love of books...</p>
+    <p>These users love books...</p>
+    <% @users.each do |user|%>
+      <p><%= user.username %></p>
+    <% end %>
   </div>
   <div class="landing-background"></div>
 
